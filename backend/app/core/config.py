@@ -1,5 +1,6 @@
+import os
 from pydantic_settings import BaseSettings
-from pydantic import Field
+from pydantic import Field, model_validator
 from functools import lru_cache
 from pathlib import Path
 
@@ -92,7 +93,21 @@ class Settings(BaseSettings):
     NEXUSRAG_MIN_RELEVANCE_SCORE: float = 0.15
 
     # CORS
-    CORS_ORIGINS: list[str] = ["http://localhost:5174", "http://localhost:3000"]
+    CORS_ORIGINS: list[str] = ["*"]
+
+    @model_validator(mode="after")
+    def adjust_settings(self):
+        # Auto-detect API key from common environment variable aliases
+        if not self.GOOGLE_AI_API_KEY:
+            self.GOOGLE_AI_API_KEY = os.environ.get("GEMINI_API_KEY", "") or os.environ.get("GOOGLE_API_KEY", "")
+
+        # Auto-fix postgresql URL for asyncpg if Render or hosted DB supplies postgres:// or postgresql://
+        if self.DATABASE_URL.startswith("postgres://"):
+            self.DATABASE_URL = self.DATABASE_URL.replace("postgres://", "postgresql+asyncpg://", 1)
+        elif self.DATABASE_URL.startswith("postgresql://") and "+asyncpg" not in self.DATABASE_URL:
+            self.DATABASE_URL = self.DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
+
+        return self
 
     model_config = {
         "env_file": str(ENV_FILE),
