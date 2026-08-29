@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     BASE_DIR: Path = Path(__file__).resolve().parent.parent.parent
 
     # Database
-    DATABASE_URL: str = Field(default="postgresql+asyncpg://postgres:postgres@localhost:5433/nexusrag")
+    DATABASE_URL: str = Field(default="sqlite+aiosqlite:///./nexusrag.db")
 
     # LLM Provider: "gemini" | "ollama"
     LLM_PROVIDER: str = Field(default="gemini")
