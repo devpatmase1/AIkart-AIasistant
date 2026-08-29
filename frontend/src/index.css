@@ -1,0 +1,383 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* =======================================================
+     SlideaGen — Sage & Ember Palette
+     Primary  → Green (hue 160) — trust, growth, intelligence
+     Accent   → Amber/Gold (hue 70) — warmth, energy, action
+     Neutrals → Green-tinted gray (hue 155)
+     Color Space: OKLCH (perceptually uniform)
+     ======================================================= */
+
+  /* Colors - Dark Theme (default) */
+  --color-background: oklch(0.15 0.015 155);           /* deep green-charcoal */
+  --color-foreground: oklch(0.92 0.015 105);           /* warm off-white */
+  --color-primary: oklch(0.58 0.14 160);               /* sage green */
+  --color-primary-foreground: oklch(0.98 0.005 160);   /* white on green */
+  --color-secondary: oklch(0.23 0.02 155);             /* dark green-gray */
+  --color-secondary-foreground: oklch(0.88 0.02 105);  /* warm light */
+  --color-accent: oklch(0.76 0.13 70);                 /* amber gold */
+  --color-accent-foreground: oklch(0.18 0.02 55);      /* dark on gold */
+  --color-destructive: oklch(0.58 0.20 25);            /* ember red (errors) */
+  --color-destructive-foreground: oklch(0.98 0 0);
+  --color-muted: oklch(0.23 0.015 155);                /* dark green-gray */
+  --color-muted-foreground: oklch(0.55 0.025 155);     /* medium green-gray */
+  --color-card: oklch(0.20 0.015 155);                 /* card surface */
+  --color-card-foreground: oklch(0.92 0.015 105);
+  --color-border: oklch(0.30 0.025 155);               /* green-tinted border */
+  --color-input: oklch(0.23 0.015 155);
+  --color-ring: oklch(0.58 0.14 160);                  /* sage ring / focus */
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Fonts */
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "Fira Code", monospace;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+/* =============================================================================
+   Custom Scrollbars
+   Thin, green-tinted scrollbar consistent across editor panel + chat window.
+   ============================================================================= */
+
+/* Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.38 0.03 155 / 0.55);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.52 0.04 155 / 0.75);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.38 0.03 155 / 0.55) transparent;
+}
+
+/* Light theme scrollbar */
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: oklch(0.68 0.03 105 / 0.55);
+}
+html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.55 0.04 105 / 0.75);
+}
+html[data-theme="light"] * {
+  scrollbar-color: oklch(0.68 0.03 105 / 0.55) transparent;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth theme transition */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* =============================================================================
+   Light Theme Override (aiKart.co Aesthetic)
+   ============================================================================= */
+html[data-theme="light"], :root {
+  --color-background: #f4f4f4;
+  --color-foreground: #0f172a;
+  --color-primary: #0050FF;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #1e293b;
+  --color-accent: #0050FF;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #475569;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #0050FF;
+}
+
+/* =============================================================================
+   aiKart Shimmering Gradient & Glassmorphism Utilities
+   ============================================================================= */
+@keyframes hm-gradientShift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.animated-gradient, .hm-grad {
+  display: inline-block;
+  background: linear-gradient(90deg, #0050FF 0%, #7F7595 25%, #FFAE00 50%, #7F7595 75%, #0050FF 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: hm-gradientShift 6s linear infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(226, 232, 240, 0.9);
+  border-radius: 9999px;
+}
+
+/* Subtle hover lift for cards */
+.hover-lift {
+  transition: transform 150ms ease;
+}
+.hover-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* =============================================================================
+   Citation Highlight (Document Viewer)
+   Dark mode: brighter so it stands out against dark bg
+   Light mode: darker so it stands out against light bg
+   Both maintain readable text contrast
+   ============================================================================= */
+.chunk-hl-heading {
+  border-left: 2px solid var(--color-primary);
+  background-color: oklch(0.58 0.14 160 / 0.20);
+  padding-left: 0.75rem;
+  border-radius: 0 4px 4px 0;
+}
+.chunk-hl-sibling {
+  border-left: 2px solid oklch(0.58 0.14 160 / 0.5);
+  background-color: oklch(0.58 0.14 160 / 0.12);
+  padding-left: 0.75rem;
+}
+
+html[data-theme="light"] .chunk-hl-heading {
+  background-color: oklch(0.48 0.14 160 / 0.18);
+}
+html[data-theme="light"] .chunk-hl-sibling {
+  background-color: oklch(0.48 0.14 160 / 0.10);
+}
+
+/* =============================================================================
+   Document Card — Processing Shimmer
+   ============================================================================= */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* =============================================================================
+   Citation Highlight Flash Animations
+   Smooth fade-out so users have time to spot the highlighted area.
+   ============================================================================= */
+
+/* --- Heading highlight (citation click) --- */
+@keyframes heading-hl-fade {
+  0%   { background-color: oklch(0.58 0.14 160 / 0.25); }
+  70%  { background-color: oklch(0.58 0.14 160 / 0.18); }
+  100% { background-color: transparent; }
+}
+.heading-hl-flash {
+  animation: heading-hl-fade 5s ease-out forwards;
+  border-radius: 4px;
+}
+html[data-theme="light"] .heading-hl-flash {
+  animation-name: heading-hl-fade-light;
+}
+@keyframes heading-hl-fade-light {
+  0%   { background-color: oklch(0.48 0.14 160 / 0.22); }
+  70%  { background-color: oklch(0.48 0.14 160 / 0.14); }
+  100% { background-color: transparent; }
+}
+
+/* --- Image highlight (image citation click) --- */
+@keyframes image-hl-fade {
+  0%   { box-shadow: 0 0 0 3px oklch(0.58 0.14 160 / 0.50); }
+  70%  { box-shadow: 0 0 0 3px oklch(0.58 0.14 160 / 0.30); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+.image-hl-flash {
+  animation: image-hl-fade 5s ease-out forwards;
+  border-radius: 8px;
+}
+html[data-theme="light"] .image-hl-flash {
+  animation-name: image-hl-fade-light;
+}
+@keyframes image-hl-fade-light {
+  0%   { box-shadow: 0 0 0 3px oklch(0.48 0.14 160 / 0.45); }
+  70%  { box-shadow: 0 0 0 3px oklch(0.48 0.14 160 / 0.25); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+
+/* --- Page divider highlight (tree node click) --- */
+@keyframes page-hl-fade {
+  0%   { background-color: oklch(0.58 0.14 160 / 0.18); }
+  60%  { background-color: oklch(0.58 0.14 160 / 0.10); }
+  100% { background-color: transparent; }
+}
+.page-hl-flash {
+  animation: page-hl-fade 4s ease-out forwards;
+  border-radius: 4px;
+}
+html[data-theme="light"] .page-hl-flash {
+  animation-name: page-hl-fade-light;
+}
+@keyframes page-hl-fade-light {
+  0%   { background-color: oklch(0.48 0.14 160 / 0.15); }
+  60%  { background-color: oklch(0.48 0.14 160 / 0.08); }
+  100% { background-color: transparent; }
+}
+
+/* =============================================================================
+   Streaming Text — Fade Mask (Gemini-style)
+   ============================================================================= */
+.streaming-fade-mask {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black calc(100% - 10rem),
+    rgba(0,0,0,0.02) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black calc(100% - 10rem),
+    rgba(0,0,0,0.02) 100%
+  );
+}
+
+/* =============================================================================
+   Bot Icon — Rotating Glow Ring
+   ============================================================================= */
+@keyframes icon-glow-spin {
+  to { transform: rotate(360deg); }
+}
+
+.icon-glow-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color-primary) 0deg,
+    transparent 90deg,
+    transparent 270deg,
+    var(--color-primary) 360deg
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    #000 calc(100% - 2px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 2px),
+    #000 calc(100% - 2px)
+  );
+  animation: icon-glow-spin 2s linear infinite;
+}
+
+/* =============================================================================
+   KaTeX Display Math
+   ============================================================================= */
+.katex-display {
+  margin: 0.75rem 0 !important;
+  overflow-x: auto;
+}
+li .katex-display {
+  margin: 0.5rem 0 !important;
+}
+
+/* =============================================================================
+   Code Block — Reset prose defaults for react-syntax-highlighter
+   ============================================================================= */
+.prose pre {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+.prose pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* =============================================================================
+   Streaming Cursor — blinking block cursor at end of streaming text
+   ============================================================================= */
+@keyframes streaming-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+.streaming-cursor::after {
+  content: "\25CC";
+  display: inline;
+  margin-left: 2px;
+  color: var(--color-primary);
+  animation: streaming-blink 1s step-end infinite;
+  font-size: 0.85em;
+}
+
+/* =============================================================================
+   ThinkingTextWindow — Gradient mask for streaming thinking text
+   Fades bottom edge so streaming text feels continuous, not cut off.
+   ============================================================================= */
+.streaming-thinking-mask {
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0,0,0,0.2) 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0,0,0,0.2) 100%);
+}
