@@ -1,0 +1,946 @@
+[
+  {
+    "test_id": "FACT-VI-01",
+    "category": "fact_extraction",
+    "question": "TechVina được thành lập năm nào và hoạt động ở bao nhiêu quố...",
+    "language": "vi",
+    "overall_score": 0.95,
+    "source_count": 1,
+    "latency_ms": 2184.644937515259,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "2/2 keywords found"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (22.9%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 0.6,
+        "passed": true,
+        "reason": "Brief answer (22 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Cited 1/1 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "FACT-VI-02",
+    "category": "fact_extraction",
+    "question": "Doanh thu của TechVina năm 2025 là bao nhiêu và tăng trưởng ...",
+    "language": "vi",
+    "overall_score": 0.828125,
+    "source_count": 8,
+    "latency_ms": 4129.19545173645,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.5,
+        "passed": true,
+        "reason": "2/4 keywords found. Missing: ['4850', '23.4']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (25.3%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (38 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.125,
+        "passed": false,
+        "reason": "Cited 1/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "FACT-VI-03",
+    "category": "fact_extraction",
+    "question": "TechVina có bao nhiêu nhân sự và phân bổ theo trình độ như t...",
+    "language": "vi",
+    "overall_score": 0.8875,
+    "source_count": 5,
+    "latency_ms": 4367.958068847656,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.5,
+        "passed": true,
+        "reason": "1/2 keywords found. Missing: ['3200']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Partial answer with noted gaps (acceptable)"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (24.2%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (102 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Cited 4/5 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "FACT-EN-01",
+    "category": "fact_extraction",
+    "question": "What are the key technical breakthroughs of DeepSeek-V3.2?",
+    "language": "en",
+    "overall_score": 0.890625,
+    "source_count": 8,
+    "latency_ms": 6492.616415023804,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.75,
+        "passed": true,
+        "reason": "3/4 keywords found. Missing: ['RL']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "English response OK"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (126 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.375,
+        "passed": true,
+        "reason": "Cited 3/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "FACT-EN-02",
+    "category": "fact_extraction",
+    "question": "What competitions did DeepSeek-V3.2 achieve gold-medal perfo...",
+    "language": "en",
+    "overall_score": 0.921875,
+    "source_count": 8,
+    "latency_ms": 4642.311334609985,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "2/2 keywords found"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "English response OK"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (50 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.375,
+        "passed": true,
+        "reason": "Cited 3/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "TABLE-01",
+    "category": "table_data",
+    "question": "Cho tôi biết doanh thu thuần và EBITDA của TechVina từ 2023-...",
+    "language": "vi",
+    "overall_score": 0.80625,
+    "source_count": 8,
+    "latency_ms": 5727.802038192749,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.4,
+        "passed": false,
+        "reason": "2/5 keywords found. Missing: ['3.180', '3180', '4850']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Partial answer with noted gaps (acceptable)"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (21.3%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (97 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.25,
+        "passed": true,
+        "reason": "Cited 2/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "TABLE-02",
+    "category": "table_data",
+    "question": "Biên lợi nhuận gộp và ROE của TechVina qua các năm 2023-2025...",
+    "language": "vi",
+    "overall_score": 0.653125,
+    "source_count": 8,
+    "latency_ms": 6478.924512863159,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.0,
+        "passed": false,
+        "reason": "0/6 keywords found. Missing: ['40', '42', '44', '12,8', '15,6', '18,7']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Partial answer with noted gaps (acceptable)"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 0.3,
+        "passed": false,
+        "reason": "Citations in refusal sentences: ['[1]', '[1]', '[1]', '[1]', '[1]', '[1]']"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (21.6%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (130 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.125,
+        "passed": false,
+        "reason": "Cited 1/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "TABLE-03",
+    "category": "table_data",
+    "question": "DeepSeek-V3.2 đạt kết quả bao nhiêu trên AIME 2025 và HMMT F...",
+    "language": "vi",
+    "overall_score": 0.90625,
+    "source_count": 8,
+    "latency_ms": 5685.4567527771,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "2/2 keywords found"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (12.3%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (58 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.25,
+        "passed": true,
+        "reason": "Cited 2/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "CROSS-01",
+    "category": "cross_doc",
+    "question": "TechVina có mảng AI Platform không? Doanh thu mảng này là ba...",
+    "language": "vi",
+    "overall_score": 0.9020833333333333,
+    "source_count": 8,
+    "latency_ms": 8985.42833328247,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.6666666666666666,
+        "passed": true,
+        "reason": "2/3 keywords found. Missing: ['900']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Partial answer with noted gaps (acceptable)"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (21.2%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (220 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.75,
+        "passed": true,
+        "reason": "Cited 6/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "CROSS-02",
+    "category": "cross_doc",
+    "question": "TechVina đầu tư bao nhiêu cho R&D? DeepSeek-V3.2 có đóng góp...",
+    "language": "vi",
+    "overall_score": 0.859375,
+    "source_count": 8,
+    "latency_ms": 7081.063270568848,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.5,
+        "passed": true,
+        "reason": "1/2 keywords found. Missing: ['12']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (22.5%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (166 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.375,
+        "passed": true,
+        "reason": "Cited 3/8 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "ANTI-01",
+    "category": "anti_hallucination",
+    "question": "Elon Musk sinh năm bao nhiêu?",
+    "language": "vi",
+    "overall_score": 1.0,
+    "source_count": 3,
+    "latency_ms": 2053.352117538452,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No keywords to check"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly refused"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (22.2%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Refusal case — skip"
+      },
+      {
+        "name": "context_utilization",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Skip — refusal or no sources"
+      }
+    ]
+  },
+  {
+    "test_id": "ANTI-02",
+    "category": "anti_hallucination",
+    "question": "Cách nấu phở Hà Nội ngon nhất?",
+    "language": "vi",
+    "overall_score": 1.0,
+    "source_count": 3,
+    "latency_ms": 1939.4283294677734,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No keywords to check"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly refused"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (22.2%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Refusal case — skip"
+      },
+      {
+        "name": "context_utilization",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Skip — refusal or no sources"
+      }
+    ]
+  },
+  {
+    "test_id": "ANTI-03",
+    "category": "anti_hallucination",
+    "question": "Bitcoin giá bao nhiêu hôm nay?",
+    "language": "vi",
+    "overall_score": 1.0,
+    "source_count": 3,
+    "latency_ms": 2470.3989028930664,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No keywords to check"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly refused"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (22.2%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Refusal case — skip"
+      },
+      {
+        "name": "context_utilization",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Skip — refusal or no sources"
+      }
+    ]
+  },
+  {
+    "test_id": "HIST-01",
+    "category": "history",
+    "question": "Mảng nào tăng trưởng mạnh nhất?",
+    "language": "vi",
+    "overall_score": 0.8458333333333332,
+    "source_count": 2,
+    "latency_ms": 2059.462785720825,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.6666666666666666,
+        "passed": true,
+        "reason": "2/3 keywords found. Missing: ['66']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (23.8%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 0.6,
+        "passed": true,
+        "reason": "Brief answer (12 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.5,
+        "passed": true,
+        "reason": "Cited 1/2 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "HIST-02",
+    "category": "history",
+    "question": "Giải thích chi tiết hơn về điểm đầu tiên",
+    "language": "vi",
+    "overall_score": 0.8708333333333333,
+    "source_count": 3,
+    "latency_ms": 3755.406618118286,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 0.5,
+        "passed": true,
+        "reason": "2/4 keywords found. Missing: ['lightning', 'indexer']"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 0.8,
+        "passed": true,
+        "reason": "Partial answer with noted gaps (acceptable)"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (24.6%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Detailed answer (87 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.6666666666666666,
+        "passed": true,
+        "reason": "Cited 2/3 sources"
+      }
+    ]
+  },
+  {
+    "test_id": "CITE-01",
+    "category": "citation",
+    "question": "TechVina thực hiện thương vụ M&A nào năm 2025 và giá trị bao...",
+    "language": "vi",
+    "overall_score": 0.8458333333333333,
+    "source_count": 6,
+    "latency_ms": 3021.580457687378,
+    "metrics": [
+      {
+        "name": "keyword_coverage",
+        "score": 1.0,
+        "passed": true,
+        "reason": "3/3 keywords found"
+      },
+      {
+        "name": "refusal_accuracy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Correctly answered"
+      },
+      {
+        "name": "no_phantom_citations",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No phantom citations"
+      },
+      {
+        "name": "citation_format",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Citations properly formatted"
+      },
+      {
+        "name": "no_token_artifacts",
+        "score": 1.0,
+        "passed": true,
+        "reason": "No token artifacts"
+      },
+      {
+        "name": "language_match",
+        "score": 1.0,
+        "passed": true,
+        "reason": "Vietnamese content detected (20.0%)"
+      },
+      {
+        "name": "answer_completeness",
+        "score": 0.6,
+        "passed": true,
+        "reason": "Brief answer (20 words)"
+      },
+      {
+        "name": "context_utilization",
+        "score": 0.16666666666666666,
+        "passed": false,
+        "reason": "Cited 1/6 sources"
+      }
+    ]
+  }
+]

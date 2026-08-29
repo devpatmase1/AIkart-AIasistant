@@ -1,0 +1,836 @@
+[
+  {
+    "id": "RAGAS-001",
+    "user_input": "Công ty TechVina được thành lập vào năm nào?",
+    "reference": "Công ty TechVina được thành lập năm 2010.",
+    "reference_contexts": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập vào năm 2010 [1].",
+    "retrieved_contexts_actual": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động"
+    ],
+    "source_count": 1,
+    "latency_ms": 11051.324129104614,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-002",
+    "user_input": "Doanh thu thuần của TechVina năm 2024 là bao nhiêu?",
+    "reference": "Doanh thu thuần của TechVina năm 2024 là 3.930 tỷ VNĐ.",
+    "reference_contexts": [
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "synthesizer_name": "table_extraction",
+    "response": "Doanh thu thuần của TechVina năm 2024 là 3.930 tỷ VNĐ [2].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 ",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. ",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V"
+    ],
+    "source_count": 8,
+    "latency_ms": 2411.7271900177,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-003",
+    "user_input": "Mảng nào của TechVina có mức tăng trưởng cao nhất trong năm 2025 và tỷ lệ tăng trưởng là bao nhiêu?",
+    "reference": "Mảng AI Platform của TechVina có mức tăng trưởng cao nhất trong năm 2025, với tỷ lệ tăng trưởng là 66,7%.",
+    "reference_contexts": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "synthesizer_name": "multi_hop_reasoning",
+    "response": "Mảng AI Platform của TechVina có mức tăng trưởng cao nhất trong năm 2025, đạt 67% [1].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Doanh thu thuần, Thực hiện 2025 = 4.850 tỷ. Doanh thu thuần, Kế hoạch 2026 = 6.300 tỷ. Doanh thu thuần, Tăng trưởng = +29,9%. EBITDA, Thực hiện 2025 = 890 tỷ. EBITDA, Kế hoạch 2026 = 1.260 tỷ. EBITDA, Tăng trưởng = +41,6%. Lợi nhuận sau thuế, Thực hiện 2025 = 612 tỷ. Lợi nhuận sau thuế, Kế hoạch 2026 = 850 tỷ. Lợi nhuận sau thuế, Tăng trưởng = +38,9%. Tỷ lệ doanh thu quốc tế, Thực hiện 2025 = 22%. Tỷ lệ doanh thu quốc tế, Kế hoạch 2026 = 30%. Tỷ lệ doanh thu quốc tế, Tăng trưởng = +8 điểm%. Tỷ l"
+    ],
+    "source_count": 8,
+    "latency_ms": 3147.2795009613037,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.0
+    }
+  },
+  {
+    "id": "RAGAS-004",
+    "user_input": "Giá trị thương vụ M&A giữa TechVina và DataStream là bao nhiêu?",
+    "reference": "Giá trị thương vụ M&A giữa TechVina và DataStream là 45 triệu USD.",
+    "reference_contexts": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng "
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Giá trị thương vụ M&A chiến lược giữa TechVina và DataStream (Singapore) là 45 triệu USD [1].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "R1, Rủi ro = Cạnh tranh giá từ nhà cung cấp Trung Quốc. R1, Mức độ = Nghiêm trọng. R1, Mô tả Chi tiết = Alibaba Cloud, Huawei Cloud mở rộng mạnh tại ASEAN với mức giá thấp hơn 40-60% so với nhà cung cấp nội địa. Nguy cơ mất khách hàng phân khúc SME.. R1, Biện pháp Ứng phó = Tập trung vào giá trị gia tăng (AI tiếng Việt, tuân thủ pháp luật VN, hỗ trợ 24/7 bằng tiếng Việt). Xây dựng gói hybrid cloud co-location. Chương trình loyalty 3 năm với chiết khấu lũy tiến.. R2, Rủi ro = Tích hợp M&A DataStr"
+    ],
+    "source_count": 4,
+    "latency_ms": 2449.8820304870605,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.0
+    }
+  },
+  {
+    "id": "RAGAS-005",
+    "user_input": "Tổng tài sản của TechVina vào cuối năm 2025 là bao nhiêu?",
+    "reference": "Tổng tài sản của TechVina vào cuối năm 2025 là 5.825 tỷ VNĐ.",
+    "reference_contexts": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "synthesizer_name": "table_extraction",
+    "response": "Tổng tài sản của TechVina vào cuối năm 2025 là 5.825 tỷ VNĐ [6].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Doanh thu thuần, Thực hiện 2025 = 4.850 tỷ. Doanh thu thuần, Kế hoạch 2026 = 6.300 tỷ. Doanh thu thuần, Tăng trưởng = +29,9%. EBITDA, Thực hiện 2025 = 890 tỷ. EBITDA, Kế hoạch 2026 = 1.260 tỷ. EBITDA, Tăng trưởng = +41,6%. Lợi nhuận sau thuế, Thực hiện 2025 = 612 tỷ. Lợi nhuận sau thuế, Kế hoạch 2026 = 850 tỷ. Lợi nhuận sau thuế, Tăng trưởng = +38,9%. Tỷ lệ doanh thu quốc tế, Thực hiện 2025 = 22%. Tỷ lệ doanh thu quốc tế, Kế hoạch 2026 = 30%. Tỷ lệ doanh thu quốc tế, Tăng trưởng = +8 điểm%. Tỷ l",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%"
+    ],
+    "source_count": 8,
+    "latency_ms": 2835.8583450317383,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-006",
+    "user_input": "Chi phí R&D của TechVina năm 2023 là bao nhiêu?",
+    "reference": "Chi phí R&D của TechVina năm 2023 là 382 tỷ VNĐ.",
+    "reference_contexts": [
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V"
+    ],
+    "synthesizer_name": "table_extraction",
+    "response": "Chi phí R&D của TechVina năm 2023 là 382 tỷ VNĐ [1].",
+    "retrieved_contexts_actual": [
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V",
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện.",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 ",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages"
+    ],
+    "source_count": 8,
+    "latency_ms": 2298.375368118286,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-007",
+    "user_input": "Số lượng nhân sự của TechVina là bao nhiêu?",
+    "reference": "Số lượng nhân sự của TechVina là hơn 3.200 người.",
+    "reference_contexts": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Số lượng nhân sự của TechVina là hơn 3.200 người [1]. Ngoài ra, TechVina có đội ngũ 280 kỹ sư AI/ML chuyên trách [2] và trung tâm R&D tại Đà Nẵng có 450 kỹ sư chuyên về AI/ML [3].",
+    "retrieved_contexts_actual": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam"
+    ],
+    "source_count": 6,
+    "latency_ms": 2821.4290142059326,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 0.6666666666666666,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.5
+    }
+  },
+  {
+    "id": "RAGAS-008",
+    "user_input": "So sánh tổng nguồn vốn của TechVina giữa năm 2024 và 2025, tăng trưởng bao nhiêu?",
+    "reference": "Tổng nguồn vốn của TechVina tăng từ 3.800 tỷ VNĐ vào năm 2024 lên 5.825 tỷ VNĐ vào năm 2025, tăng trưởng 53,3%.",
+    "reference_contexts": [
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%"
+    ],
+    "synthesizer_name": "comparison_analysis",
+    "response": "Tổng nguồn vốn của TechVina vào ngày 31/12/2024 là 3.800 tỷ VNĐ [2] [6], và vào ngày 31/12/2025 là 5.825 tỷ VNĐ [2] [6]. Tổng nguồn vốn đã tăng trưởng 53,3% [2] [6].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "source_count": 8,
+    "latency_ms": 3027.03595161438,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-009",
+    "user_input": "Chủ tịch Hội đồng Quản trị của TechVina là ai?",
+    "reference": "Chủ tịch Hội đồng Quản trị của TechVina là Nguyễn Minh Trí.",
+    "reference_contexts": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng "
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Chủ tịch Hội đồng Quản trị của TechVina là Nguyễn Minh Trí [1].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s"
+    ],
+    "source_count": 3,
+    "latency_ms": 2282.6645374298096,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 0.0,
+      "context_recall": 0.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-010",
+    "user_input": "TechVina phục vụ bao nhiêu khách hàng doanh nghiệp?",
+    "reference": "TechVina phục vụ hơn 2.500 khách hàng doanh nghiệp.",
+    "reference_contexts": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "TechVina phục vụ hơn 2.500 khách hàng doanh nghiệp [1].",
+    "retrieved_contexts_actual": [
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s"
+    ],
+    "source_count": 3,
+    "latency_ms": 1969.4828987121582,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-011",
+    "user_input": "Biên lợi nhuận gộp năm 2023 là bao nhiêu?",
+    "reference": "Biên lợi nhuận gộp năm 2023 là 40,0%.",
+    "reference_contexts": [
+      "Biên lợi nhuận gộp, 2023 = 40,0%. Biên lợi nhuận gộp, 2024 = 42,0%. Biên lợi nhuận gộp, 2025 = 44,0%. Biên lợi nhuận gộp, Đánh giá = ▲Cải thiện liên tục. Biên EBITDA, 2023 = 14,4%. Biên EBITDA, 2024 = 15,8%. Biên EBITDA, 2025 = 18,4%. Biên EBITDA, Đánh giá = ▲Hiệu quả vận hành tốt. ROE, 2023 = 12,8%. ROE, 2024 = 15,6%. ROE, 2025 = 18,7%. ROE, Đánh giá = ▲Vượt trung bình ngành. ROA, 2023 = 9,2%. ROA, 2024 = 11,2%. ROA, 2025 = 10,5%. ROA, Đánh giá = ▬Pha loãng do M&A"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Biên lợi nhuận gộp năm 2023 là 40,0% [1].",
+    "retrieved_contexts_actual": [
+      "Biên lợi nhuận gộp, 2023 = 40,0%. Biên lợi nhuận gộp, 2024 = 42,0%. Biên lợi nhuận gộp, 2025 = 44,0%. Biên lợi nhuận gộp, Đánh giá = ▲Cải thiện liên tục. Biên EBITDA, 2023 = 14,4%. Biên EBITDA, 2024 = 15,8%. Biên EBITDA, 2025 = 18,4%. Biên EBITDA, Đánh giá = ▲Hiệu quả vận hành tốt. ROE, 2023 = 12,8%. ROE, 2024 = 15,6%. ROE, 2025 = 18,7%. ROE, Đánh giá = ▲Vượt trung bình ngành. ROA, 2023 = 9,2%. ROA, 2024 = 11,2%. ROA, 2025 = 10,5%. ROA, Đánh giá = ▬Pha loãng do M&A",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 ",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện."
+    ],
+    "source_count": 5,
+    "latency_ms": 2198.7431049346924,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 0.9,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-012",
+    "user_input": "Tiền và tương đương tiền vào ngày 31/12/2024 là bao nhiêu?",
+    "reference": "Tiền và tương đương tiền vào ngày 31/12/2024 là 820.",
+    "reference_contexts": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Tiền và tương đương tiền vào ngày 31/12/2024 là 820 [1].",
+    "retrieved_contexts_actual": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%"
+    ],
+    "source_count": 2,
+    "latency_ms": 2267.879009246826,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.5,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-013",
+    "user_input": "Tổng tài sản của công ty vào ngày 31/12/2025 là bao nhiêu?",
+    "reference": "Tổng Tài sản của công ty vào ngày 31/12/2025 là 5.825.",
+    "reference_contexts": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Tổng tài sản của công ty vào ngày 31/12/2025 là 5.825 [1].",
+    "retrieved_contexts_actual": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%",
+      "Doanh thu thuần, Thực hiện 2025 = 4.850 tỷ. Doanh thu thuần, Kế hoạch 2026 = 6.300 tỷ. Doanh thu thuần, Tăng trưởng = +29,9%. EBITDA, Thực hiện 2025 = 890 tỷ. EBITDA, Kế hoạch 2026 = 1.260 tỷ. EBITDA, Tăng trưởng = +41,6%. Lợi nhuận sau thuế, Thực hiện 2025 = 612 tỷ. Lợi nhuận sau thuế, Kế hoạch 2026 = 850 tỷ. Lợi nhuận sau thuế, Tăng trưởng = +38,9%. Tỷ lệ doanh thu quốc tế, Thực hiện 2025 = 22%. Tỷ lệ doanh thu quốc tế, Kế hoạch 2026 = 30%. Tỷ lệ doanh thu quốc tế, Tăng trưởng = +8 điểm%. Tỷ l",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V"
+    ],
+    "source_count": 4,
+    "latency_ms": 2751.472234725952,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-014",
+    "user_input": "Sự thay đổi của lợi thế thương mại từ 31/12/2024 đến 31/12/2025 là bao nhiêu?",
+    "reference": "Lợi thế thương mại biến động +382,1% từ 31/12/2024 đến 31/12/2025.",
+    "reference_contexts": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Lợi thế thương mại đã thay đổi từ 280 vào ngày 31/12/2024 lên 1.350 vào ngày 31/12/2025 [1]. Sự thay đổi này tương ứng với mức tăng +382,1% [1].",
+    "retrieved_contexts_actual": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V",
+      "Biên lợi nhuận gộp, 2023 = 40,0%. Biên lợi nhuận gộp, 2024 = 42,0%. Biên lợi nhuận gộp, 2025 = 44,0%. Biên lợi nhuận gộp, Đánh giá = ▲Cải thiện liên tục. Biên EBITDA, 2023 = 14,4%. Biên EBITDA, 2024 = 15,8%. Biên EBITDA, 2025 = 18,4%. Biên EBITDA, Đánh giá = ▲Hiệu quả vận hành tốt. ROE, 2023 = 12,8%. ROE, 2024 = 15,6%. ROE, 2025 = 18,7%. ROE, Đánh giá = ▲Vượt trung bình ngành. ROA, 2023 = 9,2%. ROA, 2024 = 11,2%. ROA, 2025 = 10,5%. ROA, Đánh giá = ▬Pha loãng do M&A",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "source_count": 5,
+    "latency_ms": 3325.958728790283,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.67
+    }
+  },
+  {
+    "id": "RAGAS-015",
+    "user_input": "Hệ số nợ/vốn CSH (D/E) năm 2025 là bao nhiêu và đánh giá về nó như thế nào?",
+    "reference": "Hệ số nợ/vốn CSH (D/E) năm 2025 là 0,52 và được đánh giá là tăng do vay M&A.",
+    "reference_contexts": [
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Hệ số nợ/vốn CSH (D/E) năm 2025 là 0,52 [1]. Đánh giá về chỉ số này là tăng do vay M&A [1].",
+    "retrieved_contexts_actual": [
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện.",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "source_count": 2,
+    "latency_ms": 2715.4345512390137,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.5,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-016",
+    "user_input": "Số lượng Thạc sĩ trong công ty là bao nhiêu?",
+    "reference": "Số lượng Thạc sĩ trong công ty là 520.",
+    "reference_contexts": [
+      "Theo trình độ, Số lượng = . Theo trình độ, Tỷ lệ = . Tiến sĩ, Số lượng = 45. Tiến sĩ, Tỷ lệ = 1,4%. Thạc sĩ, Số lượng = 520. Thạc sĩ, Tỷ lệ = 16,3%. Cử nhân/Kỹ sư, Số lượng = 2.380. Cử nhân/Kỹ sư, Tỷ lệ = 74,4%. Cao đẳng/Khác, Số lượng = 255. Cao đẳng/Khác, Tỷ lệ = 7,9%\nTiêu chí\nTheo độ tuổi\nDưới 25\n25-35\n35-45\nTrên 45\nSố lượng\n640\n1.760\n620\n180\nTỷ lệ\n20,0%\n55,0%\n19,4%\n5,6%\n\n[Image on page 8]: Here's a description of what's visible in the image: The image is a bar chart. The x-axis is labeled \"M"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Số lượng Thạc sĩ trong công ty là 520 người [1].",
+    "retrieved_contexts_actual": [
+      "Theo trình độ, Số lượng = . Theo trình độ, Tỷ lệ = . Tiến sĩ, Số lượng = 45. Tiến sĩ, Tỷ lệ = 1,4%. Thạc sĩ, Số lượng = 520. Thạc sĩ, Tỷ lệ = 16,3%. Cử nhân/Kỹ sư, Số lượng = 2.380. Cử nhân/Kỹ sư, Tỷ lệ = 74,4%. Cao đẳng/Khác, Số lượng = 255. Cao đẳng/Khác, Tỷ lệ = 7,9%\nTiêu chí\nTheo độ tuổi\nDưới 25\n25-35\n35-45\nTrên 45\nSố lượng\n640\n1.760\n620\n180\nTỷ lệ\n20,0%\n55,0%\n19,4%\n5,6%\n\n[Image on page 8]: Here's a description of what's visible in the image: The image is a bar chart. The x-axis is labeled \"M"
+    ],
+    "source_count": 1,
+    "latency_ms": 1857.6557636260986,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-017",
+    "user_input": "Vốn chủ sở hữu đã thay đổi như thế nào từ 31/12/2024 đến 31/12/2025?",
+    "reference": "Vốn chủ sở hữu biến động +40,8% từ 31/12/2024 đến 31/12/2025.",
+    "reference_contexts": [
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Vốn chủ sở hữu đã tăng từ 2.730 vào ngày 31/12/2024 lên 3.845 vào ngày 31/12/2025, tương ứng với mức tăng 40,8% [1].",
+    "retrieved_contexts_actual": [
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện.",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "source_count": 5,
+    "latency_ms": 3422.7540493011475,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.67
+    }
+  },
+  {
+    "id": "RAGAS-018",
+    "user_input": "Biên EBITDA năm 2023 và 2025 là bao nhiêu?",
+    "reference": "Biên EBITDA năm 2023 là 14,4% và năm 2025 là 18,4%.",
+    "reference_contexts": [
+      "Biên lợi nhuận gộp, 2023 = 40,0%. Biên lợi nhuận gộp, 2024 = 42,0%. Biên lợi nhuận gộp, 2025 = 44,0%. Biên lợi nhuận gộp, Đánh giá = ▲Cải thiện liên tục. Biên EBITDA, 2023 = 14,4%. Biên EBITDA, 2024 = 15,8%. Biên EBITDA, 2025 = 18,4%. Biên EBITDA, Đánh giá = ▲Hiệu quả vận hành tốt. ROE, 2023 = 12,8%. ROE, 2024 = 15,6%. ROE, 2025 = 18,7%. ROE, Đánh giá = ▲Vượt trung bình ngành. ROA, 2023 = 9,2%. ROA, 2024 = 11,2%. ROA, 2025 = 10,5%. ROA, Đánh giá = ▬Pha loãng do M&A"
+    ],
+    "synthesizer_name": "comparison_analysis",
+    "response": "Biên EBITDA năm 2023 là 14,4% [1] và năm 2025 là 18,4% [1].",
+    "retrieved_contexts_actual": [
+      "Biên lợi nhuận gộp, 2023 = 40,0%. Biên lợi nhuận gộp, 2024 = 42,0%. Biên lợi nhuận gộp, 2025 = 44,0%. Biên lợi nhuận gộp, Đánh giá = ▲Cải thiện liên tục. Biên EBITDA, 2023 = 14,4%. Biên EBITDA, 2024 = 15,8%. Biên EBITDA, 2025 = 18,4%. Biên EBITDA, Đánh giá = ▲Hiệu quả vận hành tốt. ROE, 2023 = 12,8%. ROE, 2024 = 15,6%. ROE, 2025 = 18,7%. ROE, Đánh giá = ▲Vượt trung bình ngành. ROA, 2023 = 9,2%. ROA, 2024 = 11,2%. ROA, 2025 = 10,5%. ROA, Đánh giá = ▬Pha loãng do M&A",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 ",
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện.",
+      "Doanh thu thuần, Thực hiện 2025 = 4.850 tỷ. Doanh thu thuần, Kế hoạch 2026 = 6.300 tỷ. Doanh thu thuần, Tăng trưởng = +29,9%. EBITDA, Thực hiện 2025 = 890 tỷ. EBITDA, Kế hoạch 2026 = 1.260 tỷ. EBITDA, Tăng trưởng = +41,6%. Lợi nhuận sau thuế, Thực hiện 2025 = 612 tỷ. Lợi nhuận sau thuế, Kế hoạch 2026 = 850 tỷ. Lợi nhuận sau thuế, Tăng trưởng = +38,9%. Tỷ lệ doanh thu quốc tế, Thực hiện 2025 = 22%. Tỷ lệ doanh thu quốc tế, Kế hoạch 2026 = 30%. Tỷ lệ doanh thu quốc tế, Tăng trưởng = +8 điểm%. Tỷ l",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "hạn, Biến động. = +166,7%. Vốn chủ sở hữu, 31/12/2024. = 2.730. Vốn chủ sở hữu, 31/12/2025. = 3.845. Vốn chủ sở hữu, Biến động. = +40,8%. Tổng Nguồn vốn, 31/12/2024. = 3.800. Tổng Nguồn vốn, 31/12/2025. = 5.825. Tổng Nguồn vốn, Biến động. = +53,3%"
+    ],
+    "source_count": 8,
+    "latency_ms": 1964.9975299835205,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-019",
+    "user_input": "Hàng tồn kho đã thay đổi như thế nào từ cuối năm 2024 đến cuối năm 2025?",
+    "reference": "Hàng tồn kho biến động -20,8% từ cuối năm 2024 đến cuối năm 2025.",
+    "reference_contexts": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Hàng tồn kho đã giảm từ 120 vào ngày 31/12/2024 xuống còn 95 vào ngày 31/12/2025, tương ứng với mức giảm 20,8% [1].",
+    "retrieved_contexts_actual": [
+      "Tiền và tương đương tiền, 31/12/2024. = 820. Tiền và tương đương tiền, 31/12/2025. = 1.150. Tiền và tương đương tiền, Biến động. = +40,2%. Phải thu ngắn hạn, 31/12/2024. = 680. Phải thu ngắn hạn, 31/12/2025. = 890. Phải thu ngắn hạn, Biến động. = +30,9%. Hàng tồn kho, 31/12/2024. = 120. Hàng tồn kho, 31/12/2025. = 95. Hàng tồn kho, Biến động. = -20,8%. Tài sản cố định, 31/12/2024. = 1.450. Tài sản cố định, 31/12/2025. = 1.820. Tài sản cố định, Biến động. = +25,5%. Lợi thế thương mại, 31/12/2024.",
+      "Hệ số nợ/vốn CSH (D/E), 2023 = 0,32. Hệ số nợ/vốn CSH (D/E), 2024 = 0,39. Hệ số nợ/vốn CSH (D/E), 2025 = 0,52. Hệ số nợ/vốn CSH (D/E), Đánh giá = ▬Tăng do vay M&A. Hệ số thanh toán hiện hành, 2023 = 2,8. Hệ số thanh toán hiện hành, 2024 = 2,6. Hệ số thanh toán hiện hành, 2025 = 2,7. Hệ số thanh toán hiện hành, Đánh giá = ▲An toàn. Vòng quay phải thu (ngày), 2023 = 58. Vòng quay phải thu (ngày), 2024 = 63. Vòng quay phải thu (ngày), 2025 = 67. Vòng quay phải thu (ngày), Đánh giá = ▼Cần cải thiện.",
+      "(tỷ VNĐ) = 1.650. Lợi nhuận gộp, 2025 (tỷ VNĐ) = 2.134. Lợi nhuận gộp, %Thay đổi = +29,3%. Chi phí bán hàng, 2023 (tỷ VNĐ) = 286. Chi phí bán hàng, 2024 (tỷ VNĐ) = 354. Chi phí bán hàng, 2025 (tỷ VNĐ) = 412. Chi phí bán hàng, %Thay đổi = +16,4%. Chi phí quản lý DN, 2023 (tỷ VNĐ) = 350. Chi phí quản lý DN, 2024 (tỷ VNĐ) = 410. Chi phí quản lý DN, 2025 (tỷ VNĐ) = 485. Chi phí quản lý DN, %Thay đổi = +18,3%. Chi phí R&D, 2023 (tỷ VNĐ) = 382. Chi phí R&D, 2024 (tỷ VNĐ) = 472. Chi phí R&D, 2025 (tỷ V"
+    ],
+    "source_count": 3,
+    "latency_ms": 2821.503162384033,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.67
+    }
+  },
+  {
+    "id": "RAGAS-020",
+    "user_input": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 được ước tính có quy mô bao nhiêu và tăng trưởng so với năm 2024 là bao nhiêu?",
+    "reference": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024.",
+    "reference_contexts": [
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 được ước tính đạt quy mô 18,5 tỷ USD [1], tăng trưởng 15,2% so với năm 2024 [1].",
+    "retrieved_contexts_actual": [
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 ",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam"
+    ],
+    "source_count": 3,
+    "latency_ms": 2616.9261932373047,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-021",
+    "user_input": "Theo số liệu được cung cấp, có bao nhiêu kỹ sư/cử nhân tại TechVina?",
+    "reference": "Theo số liệu được cung cấp, số lượng kỹ sư/cử nhân tại TechVina là 2.380.",
+    "reference_contexts": [
+      "Theo trình độ, Số lượng = . Theo trình độ, Tỷ lệ = . Tiến sĩ, Số lượng = 45. Tiến sĩ, Tỷ lệ = 1,4%. Thạc sĩ, Số lượng = 520. Thạc sĩ, Tỷ lệ = 16,3%. Cử nhân/Kỹ sư, Số lượng = 2.380. Cử nhân/Kỹ sư, Tỷ lệ = 74,4%. Cao đẳng/Khác, Số lượng = 255. Cao đẳng/Khác, Tỷ lệ = 7,9%\nTiêu chí\nTheo độ tuổi\nDưới 25\n25-35\n35-45\nTrên 45\nSố lượng\n640\n1.760\n620\n180\nTỷ lệ\n20,0%\n55,0%\n19,4%\n5,6%\n\n[Image on page 8]: Here's a description of what's visible in the image: The image is a bar chart. The x-axis is labeled \"M"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Theo số liệu được cung cấp, có 2.380 kỹ sư/cử nhân tại TechVina [6].",
+    "retrieved_contexts_actual": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Theo trình độ, Số lượng = . Theo trình độ, Tỷ lệ = . Tiến sĩ, Số lượng = 45. Tiến sĩ, Tỷ lệ = 1,4%. Thạc sĩ, Số lượng = 520. Thạc sĩ, Tỷ lệ = 16,3%. Cử nhân/Kỹ sư, Số lượng = 2.380. Cử nhân/Kỹ sư, Tỷ lệ = 74,4%. Cao đẳng/Khác, Số lượng = 255. Cao đẳng/Khác, Tỷ lệ = 7,9%\nTiêu chí\nTheo độ tuổi\nDưới 25\n25-35\n35-45\nTrên 45\nSố lượng\n640\n1.760\n620\n180\nTỷ lệ\n20,0%\n55,0%\n19,4%\n5,6%\n\n[Image on page 8]: Here's a description of what's visible in the image: The image is a bar chart. The x-axis is labeled \"M",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam"
+    ],
+    "source_count": 7,
+    "latency_ms": 2354.227066040039,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-022",
+    "user_input": "Công ty nào có năng lực AI/ML tốt nhất theo đánh giá trong bảng?",
+    "reference": "TechVina được đánh giá có năng lực AI/ML tốt nhất với 5 sao (★★★★★).",
+    "reference_contexts": [
+      "Năng lực AI/ML, TechVina = ★★★★★. Năng lực AI/ML, FPT IS = ★★★★. Năng lực AI/ML, VNPT-IT = ★★★. Năng lực AI/ML, Viettel Sol. = ★★★. Năng lực AI/ML, CMC = ★★. Hạ tầng Cloud, TechVina = ★★★★. Hạ tầng Cloud, FPT IS = ★★★★★. Hạ tầng Cloud, VNPT-IT = ★★★★. Hạ tầng Cloud, Viettel Sol. = ★★★★★. Hạ tầng Cloud, CMC = ★★★. Mạng lưới khách hàng, TechVina = ★★★. Mạng lưới khách hàng, FPT IS = ★★★★★. Mạng lưới khách hàng, VNPT-IT = ★★★★. Mạng lưới khách hàng, Viettel Sol. = ★★★★. Mạng lưới khách hàng, CMC = "
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Theo đánh giá trong bảng, TechVina có năng lực AI/ML tốt nhất với xếp hạng ★★★★★ [1].\n\nCác công ty khác được đánh giá như sau:\n*   FPT IS: ★★★★ [1]\n*   VNPT-IT: ★★★ [1]\n*   Viettel Sol.: ★★★ [1]\n*   CMC: ★★ [1]\n\nTechVina còn có lợi thế cạnh tranh cốt lõi là công ty duy nhất trong top 5 sở hữu nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), đạt độ chính xác xử lý ngôn ngữ tiếng Việt (NLP) 94,2% (so với 87% của đối thủ gần nhất). Công ty này cũng có đội ngũ 280 kỹ sư AI/ML chuyên trách, lớn nhất trong ngành tại Việt Nam [2].",
+    "retrieved_contexts_actual": [
+      "Năng lực AI/ML, TechVina = ★★★★★. Năng lực AI/ML, FPT IS = ★★★★. Năng lực AI/ML, VNPT-IT = ★★★. Năng lực AI/ML, Viettel Sol. = ★★★. Năng lực AI/ML, CMC = ★★. Hạ tầng Cloud, TechVina = ★★★★. Hạ tầng Cloud, FPT IS = ★★★★★. Hạ tầng Cloud, VNPT-IT = ★★★★. Hạ tầng Cloud, Viettel Sol. = ★★★★★. Hạ tầng Cloud, CMC = ★★★. Mạng lưới khách hàng, TechVina = ★★★. Mạng lưới khách hàng, FPT IS = ★★★★★. Mạng lưới khách hàng, VNPT-IT = ★★★★. Mạng lưới khách hàng, Viettel Sol. = ★★★★. Mạng lưới khách hàng, CMC = ",
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t"
+    ],
+    "source_count": 4,
+    "latency_ms": 4536.682844161987,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.18
+    }
+  },
+  {
+    "id": "RAGAS-023",
+    "user_input": "Trong số các sản phẩm của TechVina, sản phẩm nào có tỷ lệ Churn thấp nhất?",
+    "reference": "VinaAI Engine có tỷ lệ Churn thấp nhất là 2,1%.",
+    "reference_contexts": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. "
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Trong số các sản phẩm của TechVina, VinaAI Engine có tỷ lệ Churn thấp nhất là 2,1% [1]. Các sản phẩm khác có tỷ lệ Churn như sau: VinaERP Pro là 4,2% [1], VinaCloud Platform là 6,8% [1], VinaCRM 360 là 8,5% [1], VinaSecure là 3,4% [1], và VinaAI ChatBot là 5,2% [1].",
+    "retrieved_contexts_actual": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. ",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động"
+    ],
+    "source_count": 2,
+    "latency_ms": 3264.674663543701,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.5,
+      "faithfulness": 0.2857142857142857,
+      "context_recall": 0.0,
+      "factual_correctness(mode=f1)": 0.0
+    }
+  },
+  {
+    "id": "RAGAS-024",
+    "user_input": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 được ước tính đạt quy mô bao nhiêu tỷ USD?",
+    "reference": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD.",
+    "reference_contexts": [
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Thị trường Công nghệ Thông tin Việt Nam năm 2025 được ước tính đạt quy mô 18,5 tỷ USD [1].",
+    "retrieved_contexts_actual": [
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Doanh thu thuần, 2023 (tỷ VNĐ) = 3.180. Doanh thu thuần, 2024 (tỷ VNĐ) = 3.930. Doanh thu thuần, 2025 (tỷ VNĐ) = 4.850. Doanh thu thuần, %Thay đổi = +23,4%. -Giải pháp phần mềm, 2023 (tỷ VNĐ) = 1.420. -Giải pháp phần mềm, 2024 (tỷ VNĐ) = 1.650. -Giải pháp phần mềm, 2025 (tỷ VNĐ) = 1.890. -Giải pháp phần mềm, %Thay đổi = +14,5%. -Dịch vụ Cloud, 2023 (tỷ VNĐ) = 890. -Dịch vụ Cloud, 2024 (tỷ VNĐ) = 1.180. -Dịch vụ Cloud, 2025 (tỷ VNĐ) = 1.520. -Dịch vụ Cloud, %Thay đổi = +28,8%. -AI Platform, 2023 "
+    ],
+    "source_count": 2,
+    "latency_ms": 2464.4250869750977,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.5,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-025",
+    "user_input": "Tỷ lệ doanh thu định kỳ (recurring revenue) của TechVina đã tăng lên bao nhiêu vào năm 2025?",
+    "reference": "Tỷ lệ doanh thu định kỳ của TechVina đã tăng từ 36% (2024) lên 48% (2025).",
+    "reference_contexts": [
+      "Điểm nhấn: Tỷ lệ doanh thu định kỳ (recurring revenue) đã tăng từ 36% (2024) lên 48% (2025) tổng doanh thu - phản ánh sự chuyển đổi thành công sang mô hình SaaS/subscription. Mục tiêu đạt 60% vào cuối 2026."
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Tỷ lệ doanh thu định kỳ (recurring revenue) của TechVina đã tăng lên 48% vào năm 2025 [2] [4]. Tỷ lệ này đã tăng từ 36% vào năm 2024 [2].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Điểm nhấn: Tỷ lệ doanh thu định kỳ (recurring revenue) đã tăng từ 36% (2024) lên 48% (2025) tổng doanh thu - phản ánh sự chuyển đổi thành công sang mô hình SaaS/subscription. Mục tiêu đạt 60% vào cuối 2026.",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Doanh thu thuần, Thực hiện 2025 = 4.850 tỷ. Doanh thu thuần, Kế hoạch 2026 = 6.300 tỷ. Doanh thu thuần, Tăng trưởng = +29,9%. EBITDA, Thực hiện 2025 = 890 tỷ. EBITDA, Kế hoạch 2026 = 1.260 tỷ. EBITDA, Tăng trưởng = +41,6%. Lợi nhuận sau thuế, Thực hiện 2025 = 612 tỷ. Lợi nhuận sau thuế, Kế hoạch 2026 = 850 tỷ. Lợi nhuận sau thuế, Tăng trưởng = +38,9%. Tỷ lệ doanh thu quốc tế, Thực hiện 2025 = 22%. Tỷ lệ doanh thu quốc tế, Kế hoạch 2026 = 30%. Tỷ lệ doanh thu quốc tế, Tăng trưởng = +8 điểm%. Tỷ l",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t"
+    ],
+    "source_count": 8,
+    "latency_ms": 2498.382329940796,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-026",
+    "user_input": "So sánh số lượng khách hàng (Số KH) giữa VinaERP Pro và VinaCRM 360, sản phẩm nào có số lượng khách hàng lớn hơn?",
+    "reference": "VinaCRM 360 có số lượng khách hàng lớn hơn (650 khách hàng) so với VinaERP Pro (420 khách hàng).",
+    "reference_contexts": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. "
+    ],
+    "synthesizer_name": "comparison_analysis",
+    "response": "VinaCRM 360 có số lượng khách hàng lớn hơn VinaERP Pro [1]. Cụ thể, VinaCRM 360 có 650 khách hàng, trong khi VinaERP Pro có 420 khách hàng [1].",
+    "retrieved_contexts_actual": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. "
+    ],
+    "source_count": 1,
+    "latency_ms": 2744.739770889282,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 0.3333333333333333,
+      "context_recall": 0.0,
+      "factual_correctness(mode=f1)": 1.0
+    }
+  },
+  {
+    "id": "RAGAS-027",
+    "user_input": "Trong số các công ty được so sánh, công ty nào được đánh giá cao nhất về giá cạnh tranh?",
+    "reference": "VNPT-IT được đánh giá cao nhất về giá cạnh tranh với 5 sao (★★★★★).",
+    "reference_contexts": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Trong số các công ty được so sánh, VNPT-IT được đánh giá cao nhất về giá cạnh tranh với mức ★★★★★ [1] [2]. Các công ty khác được đánh giá như sau: TechVina ★★★ [2], FPT IS ★★★ [2], Viettel Solutions ★★★★ [2], và CMC ★★★★ [2].",
+    "retrieved_contexts_actual": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Năng lực AI/ML, TechVina = ★★★★★. Năng lực AI/ML, FPT IS = ★★★★. Năng lực AI/ML, VNPT-IT = ★★★. Năng lực AI/ML, Viettel Sol. = ★★★. Năng lực AI/ML, CMC = ★★. Hạ tầng Cloud, TechVina = ★★★★. Hạ tầng Cloud, FPT IS = ★★★★★. Hạ tầng Cloud, VNPT-IT = ★★★★. Hạ tầng Cloud, Viettel Sol. = ★★★★★. Hạ tầng Cloud, CMC = ★★★. Mạng lưới khách hàng, TechVina = ★★★. Mạng lưới khách hàng, FPT IS = ★★★★★. Mạng lưới khách hàng, VNPT-IT = ★★★★. Mạng lưới khách hàng, Viettel Sol. = ★★★★. Mạng lưới khách hàng, CMC = "
+    ],
+    "source_count": 2,
+    "latency_ms": 2904.961585998535,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 0.0,
+      "context_recall": 0.0,
+      "factual_correctness(mode=f1)": 0.33
+    }
+  },
+  {
+    "id": "RAGAS-028",
+    "user_input": "Tính đến năm 2025, TechVina có bao nhiêu kỹ sư AI/ML chuyên trách?",
+    "reference": "Tính đến năm 2025, TechVina có 280 kỹ sư AI/ML chuyên trách.",
+    "reference_contexts": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Tính đến năm 2025, TechVina có đội ngũ 280 kỹ sư AI/ML chuyên trách [2]. Ngoài ra, trung tâm R&D tại Đà Nẵng của TechVina, chính thức đi vào hoạt động trong năm 2025, có 450 kỹ sư chuyên về AI/ML [1].",
+    "retrieved_contexts_actual": [
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages"
+    ],
+    "source_count": 7,
+    "latency_ms": 6925.000429153442,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.6666666666666666,
+      "faithfulness": 0.3333333333333333,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.67
+    }
+  },
+  {
+    "id": "RAGAS-029",
+    "user_input": "Sản phẩm nào của TechVina có mức tăng trưởng YoY cao nhất?",
+    "reference": "VinaAI Engine có mức tăng trưởng YoY cao nhất là +82,4%.",
+    "reference_contexts": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. "
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "Sản phẩm của TechVina có mức tăng trưởng YoY cao nhất là VinaAI Engine, với mức tăng trưởng +82,4% [1].",
+    "retrieved_contexts_actual": [
+      "VinaERP Pro, Phân khúc = Phần mềm. VinaERP Pro, Doanh thu (tỷ) = 680. VinaERP Pro, Số KH = 420. VinaERP Pro, NPS = 72. VinaERP Pro, Churn (%) = 4,2%. VinaERP Pro, YoY = +12,3%. VinaCloud Platform, Phân khúc = Cloud. VinaCloud Platform, Doanh thu (tỷ) = 850. VinaCloud Platform, Số KH = 1.200. VinaCloud Platform, NPS = 68. VinaCloud Platform, Churn (%) = 6,8%. VinaCloud Platform, YoY = +35,2%. VinaAI Engine, Phân khúc = AI Platform. VinaAI Engine, Doanh thu (tỷ) = 540. VinaAI Engine, Số KH = 180. ",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages",
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu"
+    ],
+    "source_count": 7,
+    "latency_ms": 3580.8961391448975,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 0.3333333333333333,
+      "faithfulness": 0.0,
+      "context_recall": 0.0,
+      "factual_correctness(mode=f1)": 0.0
+    }
+  },
+  {
+    "id": "RAGAS-030",
+    "user_input": "TechVina có những lợi thế cạnh tranh cốt lõi nào?",
+    "reference": "TechVina là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.",
+    "reference_contexts": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu"
+    ],
+    "synthesizer_name": "single_hop_factual",
+    "response": "TechVina có những lợi thế cạnh tranh cốt lõi sau:\n*   **Nền tảng AI Platform tự phát triển hoàn chỉnh:** TechVina là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh mang tên VinaAI Engine [1].\n*   **Khả năng xử lý ngôn ngữ tiếng Việt vượt trội:** Nền tảng VinaAI Engine có độ chính xác xử lý ngôn ngữ tự nhiên (NLP) tiếng Việt đạt 94,2%, cao hơn đáng kể so với 87% của đối thủ gần nhất [1].\n*   **Đội ngũ kỹ sư AI/ML lớn nhất ngành:** Công ty có đội ngũ 280 kỹ sư AI/ML chuyên trách, đây là đội ngũ lớn nhất trong ngành tại Việt Nam [1]. Ngoài ra, trung tâm R&D tại Đà Nẵng đã đi vào hoạt động với 450 kỹ sư chuyên về AI/ML [4].\n*   **Năng lực AI/ML cao:** TechVina được đánh giá ★★★★★ về năng lực AI/ML [3].\n*   **Đầu tư R&D mạnh mẽ:** Công ty được đánh giá ★★★★★ về đầu tư R&D [3]. Điều này được củng cố bởi việc mở trung tâm R&D tại Đà Nẵng [4].",
+    "retrieved_contexts_actual": [
+      "Lợi thế cạnh tranh cốt lõi của TechVina: Là công ty duy nhất trong top 5 có nền tảng AI Platform tự phát triển hoàn chỉnh (VinaAI Engine), với khả năng xử lý ngôn ngữ tiếng Việt vượt trội (độ chính xác NLP 94,2% so với 87% của đối thủ gần nhất). Đội ngũ 280 kỹ sư AI/ML chuyên trách - lớn nhất trong ngành tại Việt Nam.\n\n[Table on page 10 (2x6)]: This table compares the competitive pricing of five tech companies: TechVina, FPT IS, VNPT-IT, Viettel Solutions, and CMC. The \"Tiêu chí\" (Criteria) colu",
+      "Công ty Cổ phần Công nghệ TechVina (TVN) được thành lập năm 2010, là một trong những doanh nghiệp công nghệ hàng đầu Việt Nam chuyên về giải pháp trí tuệ nhân tạo (AI), điện toán  đám mây (Cloud Computing), và chuyển đổi số cho doanh nghiệp. Với hơn 15 năm hoạt động, TechVina đã xây dựng được hệ sinh thái công nghệ toàn diện phục vụ hơn 2.500 khách hàng doanh nghiệp trên 12 quốc gia.\n4.850\nDoanh thu (tỷ VNĐ)\n23,4%\nTăng trưởng YoY\n3.200+\nNhân sự\n12\nQuốc gia hoạt động",
+      "Năng lực AI/ML, TechVina = ★★★★★. Năng lực AI/ML, FPT IS = ★★★★. Năng lực AI/ML, VNPT-IT = ★★★. Năng lực AI/ML, Viettel Sol. = ★★★. Năng lực AI/ML, CMC = ★★. Hạ tầng Cloud, TechVina = ★★★★. Hạ tầng Cloud, FPT IS = ★★★★★. Hạ tầng Cloud, VNPT-IT = ★★★★. Hạ tầng Cloud, Viettel Sol. = ★★★★★. Hạ tầng Cloud, CMC = ★★★. Mạng lưới khách hàng, TechVina = ★★★. Mạng lưới khách hàng, FPT IS = ★★★★★. Mạng lưới khách hàng, VNPT-IT = ★★★★. Mạng lưới khách hàng, Viettel Sol. = ★★★★. Mạng lưới khách hàng, CMC = ",
+      "Năm 2025 đánh dấu bước ngoặt quan trọng trong hành trình phát triển của TechVina. Trong bối cảnh kinh tế toàn cầu biến động với lạm phát cao và xung đột địa chính trị, chúng tôi vẫn duy trì đà tăng trưởng mạnh mẽ 23,4% so với năm trước. Đặc biệt, mảng AI Platform đã tăng trưởng 67% - minh chứng cho chiến lược đầu tư đúng đắn vào trí tuệ nhân tạo từ năm 2021.\nChúng tôi đã hoàn tất thương vụ M&A chiến lược với DataStream (Singapore) trị giá 45 triệu USD, mở rộng năng lực xử lý dữ liệu lớn và củng ",
+      "R3, Rủi ro = An ninh mạng & Bảo mật dữ liệu. R3, Mức độ = Nghiêm trọng. R3, Mô tả Chi tiết = Quản lý dữ liệu >2.500 doanh nghiệp. Tấn công ransomware tăng 230% tại VN. Quy định PDPA (Personal Data Protection Act) có hiệu lực 2026.. R3, Biện pháp Ứng phó = SOC 24/7 (Security Operations Center). Pentest quý. Bảo hiểm cyber liability 10 triệu USD. ISO 27001 + SOC2 Type II. Bug bounty program.. R4, Rủi ro = Thiếu hụt nhân sự công nghệ cao. R4, Mức độ = Cao. R4, Mô tả Chi tiết = Nhu cầu kỹ sư AI/ML t",
+      "TechVina Academy -Đào tạo IT miễn phí, Ngân sách (tỷ) = 8,5. TechVina Academy -Đào tạo IT miễn phí, Người thụ hưởng = 2.000. TechVina Academy -Đào tạo IT miễn phí, Kết quả nổi bật = 78% học viên được tuyển dụng trong 6 tháng. Chương trình \"Trường học Thông minh\", Ngân sách (tỷ) = 5,2. Chương trình \"Trường học Thông minh\", Người thụ hưởng = 15.000 HS. Chương trình \"Trường học Thông minh\", Kết quả nổi bật = Trang bị hạ tầng CNTT cho 45 trường vùng sâu. AI for Healthcare -Sàng lọc bệnh phổi, Ngân s",
+      "Năm 2025 là năm thành công vượt kỳ vọng của TechVina với doanh thu 4.850 tỷ VNĐ (+23,4%), EBITDA 890 tỷ (+43,5%), và lợi nhuận sau thuế 612 tỷ (+44,0%). Thương vụ M&A DataStream đã đặt nền tảng cho sự tăng trưởng bùng nổ trong giai đoạn 20262028.\nBan Lãnh đạo cam kết tiếp tục chiến lược \"AI-First, ASEAN-Wide\" với mục tiêu doanh thu  6.300  tỷ  VNĐ  năm  2026  và  chuẩn  bị  cho  cột  mốc  IPO  quốc  tế  vào  năm  2027. Chúng tôi tin tưởng TechVina sẽ trở thành công ty công nghệ hàng đầu Đông Nam",
+      "Thị trường Công nghệ Thông tin Việt Nam năm 2025 đạt quy mô ước tính 18,5 tỷ USD, tăng trưởng 15,2% so với năm 2024. Trong đó, phân khúc phần mềm doanh nghiệp và dịch vụ đám mây chiếm tỷ trọng ngày càng lớn nhờ xu hướng chuyển đổi số mạnh mẽ trong khu vực công và tư nhân.\n\n[Image on page 9]: Here's a description of what's visible in the image: The image is a pie chart. Visible labels include \"FPT,\" \"VNPT,\" \"Viettel,\" \"Data,\" \"Solutions,\" \"Trends,\" \"Research,\" \"Report,\" and \"Vietnam.\" Percentages"
+    ],
+    "source_count": 8,
+    "latency_ms": 6988.113880157471,
+    "metrics": {
+      "citation_format": 1.0,
+      "no_token_artifacts": 1.0,
+      "answer_substance": 1.0,
+      "context_utilization": 1.0,
+      "faithfulness": 0.7272727272727273,
+      "context_recall": 1.0,
+      "factual_correctness(mode=f1)": 0.78
+    }
+  }
+]
