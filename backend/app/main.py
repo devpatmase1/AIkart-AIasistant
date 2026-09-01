@@ -120,6 +120,16 @@ async def global_exception_handler(request: Request, exc: Exception):
     return JSONResponse(status_code=500, content={"detail": "Internal server error"})
 
 
+@app.get("/")
+async def root():
+    return {
+        "status": "healthy",
+        "message": f"Welcome to {settings.APP_NAME} API",
+        "docs": "/docs",
+        "health": "/health",
+    }
+
+
 @app.get("/health")
 async def health():
     return {"status": "healthy"}
