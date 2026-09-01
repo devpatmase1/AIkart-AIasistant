@@ -149,11 +149,39 @@ class GeminiLLMProvider(LLMProvider):
                 config=config,
             )
             if use_think:
-                return self._extract_with_thinking(response)
+                res = self._extract_with_thinking(response)
+                if not res.content:
+                    res.content = response.text or ""
+                return res
             return response.text or ""
         except Exception as e:
-            logger.error(f"Gemini LLM call failed: {e}")
-            return LLMResult(content="") if use_think else ""
+            logger.error(f"Gemini LLM call failed with {self._model}: {e}")
+            # Automatic fallback to gemini-1.5-flash if model name or feature fails
+            fallback_models = ["gemini-1.5-flash", "gemini-2.0-flash"]
+            for fb_model in fallback_models:
+                if fb_model == self._model:
+                    continue
+                try:
+                    logger.info(f"Retrying Gemini LLM with fallback model: {fb_model}")
+                    fb_config = types.GenerateContentConfig(
+                        temperature=temperature,
+                        max_output_tokens=max_tokens,
+                    )
+                    if system_prompt:
+                        fb_config.system_instruction = system_prompt
+                    response = self._client.models.generate_content(
+                        model=fb_model,
+                        contents=contents,
+                        config=fb_config,
+                    )
+                    text_out = response.text or ""
+                    if text_out:
+                        return LLMResult(content=text_out) if use_think else text_out
+                except Exception as fb_err:
+                    logger.error(f"Fallback model {fb_model} failed: {fb_err}")
+
+            error_msg = f"Gemini API Error: {str(e)}"
+            return LLMResult(content=error_msg) if use_think else error_msg
 
     @staticmethod
     def _extract_with_thinking(response) -> LLMResult:
@@ -166,6 +194,8 @@ class GeminiLLMProvider(LLMProvider):
                     thinking += (part.text or "")
                 else:
                     content += (part.text or "")
+        if not content and hasattr(response, "text") and response.text:
+            content = response.text
         return LLMResult(content=content, thinking=thinking)
 
     async def astream(
@@ -178,14 +208,6 @@ class GeminiLLMProvider(LLMProvider):
         think: bool = False,
         tools: list | None = None,
     ) -> AsyncGenerator[StreamChunk, None]:
-        """Streaming generation via Gemini's async stream API.
-
-        After streaming completes, ``self.last_response_content`` holds the
-        accumulated ``types.Content`` with all parts (including opaque
-        ``thought_signature`` fields).  Callers that need to build proper
-        multi-turn history (e.g. after a function call) should read this
-        attribute and pass it back via ``LLMMessage._raw_provider_content``.
-        """
         contents = self._to_contents(messages)
 
         config = types.GenerateContentConfig(
@@ -201,9 +223,8 @@ class GeminiLLMProvider(LLMProvider):
         if use_think:
             config.thinking_config = self._build_thinking_config()
 
-        # Accumulate raw parts so callers can access the full response
-        # including thought_signature for proper multi-turn circulation.
         accumulated_parts: list[types.Part] = []
+        emitted_any_text = False
 
         try:
             stream = await self._client.aio.models.generate_content_stream(
@@ -230,13 +251,29 @@ class GeminiLLMProvider(LLMProvider):
                             },
                         )
                     elif hasattr(part, "text") and part.text:
+                        emitted_any_text = True
                         yield StreamChunk(type="text", text=part.text)
         except Exception as e:
             logger.error(f"Gemini streaming failed: {e}")
-            yield StreamChunk(type="text", text="")
+            if not emitted_any_text:
+                # Try non-streaming fallback
+                try:
+                    fallback_text = self.complete(
+                        messages,
+                        temperature=temperature,
+                        max_tokens=max_tokens,
+                        system_prompt=system_prompt,
+                        think=False,
+                    )
+                    if isinstance(fallback_text, LLMResult):
+                        fallback_text = fallback_text.content
+                    if fallback_text and not fallback_text.startswith("Gemini API Error"):
+                        yield StreamChunk(type="text", text=fallback_text)
+                        return
+                except Exception:
+                    pass
+                yield StreamChunk(type="text", text=f"Gemini API Error: {str(e)}")
         finally:
-            # Store the complete response Content for callers that need
-            # thought_signature circulation (Gemini 3 function calling).
             self.last_response_content = types.Content(
                 role="model",
                 parts=accumulated_parts,
@@ -254,14 +291,13 @@ class GeminiLLMProvider(LLMProvider):
 
 
 class GeminiEmbeddingProvider(EmbeddingProvider):
-    """Google Gemini text embedding (``gemini-embedding-001``, 3072-dim)."""
+    """Google Gemini text embedding."""
 
     _BATCH_SIZE = 100  # Gemini API limit
 
     def __init__(self, api_key: str, model: str = "gemini-embedding-001"):
         self._client = genai.Client(api_key=api_key)
         self._model = model
-        # gemini-embedding-001 → 3072, text-embedding-004 → 768
         self._dimension = 3072 if "embedding-001" in model else 768
 
     def embed_sync(self, texts: list[str]) -> np.ndarray:
@@ -277,9 +313,18 @@ class GeminiEmbeddingProvider(EmbeddingProvider):
                 for emb in result.embeddings:
                     all_embeddings.append(emb.values)
             except Exception as e:
-                logger.error(f"Gemini embedding failed for batch {i}: {e}")
-                for _ in batch:
-                    all_embeddings.append([0.0] * self._dimension)
+                logger.warning(f"Gemini embedding failed for model '{self._model}': {e}. Retrying with 'text-embedding-004'")
+                try:
+                    result = self._client.models.embed_content(
+                        model="text-embedding-004",
+                        contents=batch,
+                    )
+                    for emb in result.embeddings:
+                        all_embeddings.append(emb.values)
+                except Exception as e2:
+                    logger.error(f"Fallback embedding failed: {e2}")
+                    for _ in batch:
+                        all_embeddings.append([0.0] * self._dimension)
 
         return np.array(all_embeddings, dtype=np.float32)
 
