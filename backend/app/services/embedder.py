@@ -39,6 +39,18 @@ class EmbeddingService:
     def model(self):
         """Lazy load the model."""
         if self._model is None:
+            if settings.KG_EMBEDDING_PROVIDER == "gemini" and settings.GOOGLE_AI_API_KEY:
+                try:
+                    from app.services.llm.gemini import GeminiEmbeddingProvider
+                    logger.info("Using Gemini Cloud API for embeddings")
+                    self._model = GeminiEmbeddingProvider(
+                        api_key=settings.GOOGLE_AI_API_KEY,
+                        model=settings.KG_EMBEDDING_MODEL
+                    )
+                    return self._model
+                except Exception as e:
+                    logger.warning(f"Failed to initialize GeminiEmbeddingProvider: {e}")
+
             from sentence_transformers import SentenceTransformer
             logger.info(f"Loading embedding model: {self.model_name}")
             self._model = SentenceTransformer(self.model_name)
@@ -51,7 +63,9 @@ class EmbeddingService:
     @property
     def dimension(self) -> int:
         """Return the embedding dimension size."""
-        if self._model is not None:
+        if hasattr(self.model, "get_dimension"):
+            return self.model.get_dimension()
+        if self._model is not None and hasattr(self._model, "get_sentence_embedding_dimension"):
             return self._model.get_sentence_embedding_dimension()
         return self._KNOWN_DIMS.get(self.model_name, 1024)
 
@@ -59,6 +73,9 @@ class EmbeddingService:
         """Generate embedding for a single text."""
         if not text.strip():
             raise ValueError("Cannot embed empty text")
+        if hasattr(self.model, "embed_sync"):
+            emb = self.model.embed_sync([text])
+            return emb[0].tolist()
         embedding = self.model.encode(
             text,
             convert_to_numpy=True,
@@ -73,6 +90,9 @@ class EmbeddingService:
         valid_texts = [t for t in texts if t.strip()]
         if not valid_texts:
             raise ValueError("All texts are empty")
+        if hasattr(self.model, "embed_sync"):
+            embeddings = self.model.embed_sync(valid_texts)
+            return embeddings.tolist()
         embeddings = self.model.encode(
             valid_texts,
             convert_to_numpy=True,
