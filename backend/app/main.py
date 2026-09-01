@@ -120,8 +120,14 @@ async def global_exception_handler(request: Request, exc: Exception):
     return JSONResponse(status_code=500, content={"detail": "Internal server error"})
 
 
+from fastapi.responses import FileResponse, JSONResponse
+
 @app.get("/")
 async def root():
+    _frontend_dist = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+    index_html = _frontend_dist / "index.html"
+    if index_html.exists():
+        return FileResponse(index_html)
     return {
         "status": "healthy",
         "message": f"Welcome to {settings.APP_NAME} API",
