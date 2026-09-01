@@ -150,5 +150,21 @@ _docling_data = Path(__file__).resolve().parent.parent / "data" / "docling"
 _docling_data.mkdir(parents=True, exist_ok=True)
 app.mount("/static/doc-images", StaticFiles(directory=str(_docling_data)), name="static_doc_images")
 
+# Serve Frontend SPA if built frontend dist directory exists
+_frontend_dist = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+if _frontend_dist.exists():
+    _assets_dir = _frontend_dist / "assets"
+    if _assets_dir.exists():
+        app.mount("/assets", StaticFiles(directory=str(_assets_dir)), name="frontend_assets")
+
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        if full_path.startswith(("api/", "docs", "redoc", "health", "ready", "static/")):
+            return JSONResponse(status_code=404, content={"detail": "Not Found"})
+        target_file = _frontend_dist / full_path
+        if target_file.exists() and target_file.is_file():
+            return FileResponse(target_file)
+        return FileResponse(_frontend_dist / "index.html")
+
 # Import models so SQLAlchemy registers them
 from app.models import knowledge_base, document, chat_message  # noqa: E402, F401
